@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #15202b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #1c2732;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li i {
+    margin-right: 10px;
+}
+
+.sidebar button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main-content {
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tweet-box, .post {
+    background-color: #192734;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tweet-box button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.right-sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #1c2732;
+}
+
+.trends {
+    background-color: #192734;
+    padding: 20px;
+}
+
+.trends ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trends li {
+    margin: 10px 0;
+}
