@@ -5,64 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter Clone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <nav class="sidebar">
-            <ul>
-                <li><i class="fas fa-home"></i> Home</li>
-                <li><i class="fas fa-hashtag"></i> Explore</li>
-                <li><i class="fas fa-bell"></i> Notifications</li>
-                <li><i class="fas fa-envelope"></i> Messages</li>
-                <li><i class="fas fa-bookmark"></i> Bookmarks</li>
-                <li><i class="fas fa-twitter"></i> Twitter Blue</li>
-                <li><i class="fas fa-user"></i> Profile</li>
-                <li><i class="fas fa-ellipsis-h"></i> More</li>
-                <li><button>Tweet</button></li>
-            </ul>
-        </nav>
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <div class="profile-section">
+                <img src="https://images.pexels.com/photos/28406651/pexels-photo-28406651/free-photo-of-historic-armenian-church-on-akdamar-island-van.jpeg" alt="Profile Picture">
+                <h3>Devissa</h3>
+                <p>@webdev_issa</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>Notifications</li>
+                    <li>Messages</li>
+                    <li>Bookmarks</li>
+                    <li>Twitter Blue</li>
+                    <li>Profile</li>
+                    <li>More</li>
+                </ul>
+            </nav>
+            <button class="tweet-btn">Tweet</button>
+        </aside>
 
         <!-- Main Content -->
-        <div class="main-content">
+        <main class="main-content">
             <div class="tweet-box">
-                <p>What's happening?</p>
+                <textarea placeholder="What's happening?"></textarea>
                 <button>Tweet</button>
             </div>
-            <div class="post">
-                <p><strong>Before you scroll...</strong></p>
-                <p>We're updating our corporate name...</p>
-                <button>Got it</button>
+            <div class="tweet">
+                <div class="tweet-header">
+                    <h4>Akash Chavda <span>@itsky_chavda • 4h</span></h4>
+                </div>
+                <p>React Interview is Not Just Question & Answer...</p>
+                <img src="https://images.pexels.com/photos/28406651/pexels-photo-28406651/free-photo-of-historic-armenian-church-on-akdamar-island-van.jpeg" alt="Post Image">
             </div>
-            <div class="post">
-                <p><strong>React Interview Guide</strong></p>
-                <p>Updated React Interview Questions Guide...</p>
-            </div>
-        </div>
+        </main>
 
         <!-- Right Sidebar -->
-        <div class="right-sidebar">
+        <aside class="right-sidebar">
             <div class="trends">
                 <h3>Trends for you</h3>
                 <ul>
-                    <li>#reactjs</li>
-                    <li>Uganda</li>
-                    <li>Money</li>
-                    
-                    <li>#reactjs</li>
-                    <li>Uganda</li>
-                    <li>Money</li>
-                    
-                    <li>#reactjs</li>
-                    <li>Uganda</li>
-                    <li>Money</li>
-                    <!-- Add more trends -->
+                    <li>Technology • Trending</li>
+                    <li>Politics • Trending</li>
+                    <li>Trending in Rwanda</li>
+                    <li>Labor Day</li>
+                    <li>1994 genocide</li>
                 </ul>
             </div>
-        </div>
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <ul>
+                    <li>AEM Community <button>Follow</button></li>
+                    <li>Alain Ngabo Kamanda <button>Follow</button></li>
+                    <li>Ngabe Rutagarama <button>Follow</button></li>
+                </ul>
+            </div>
+        </aside>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
